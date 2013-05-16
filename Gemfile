@@ -1,8 +1,14 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'jquery-rails'
 
 group :test do
+  gem 'sqlite3-ruby', '1.3.2'
+  gem 'sqlite3'
+end
+
+group :development do
   gem 'sqlite3-ruby', '1.3.2'
   gem 'sqlite3'
 end
@@ -13,9 +19,3 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-
-group :development do
-  gem 'sqlite3-ruby', '1.3.2'
-  gem 'sqlite3'
-end
